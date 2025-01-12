@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Birthday Cakes Shop</title>
+    <title>Cake Shop - Delicious Cakes for Every Occasion</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,28 +43,27 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .product {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            margin-bottom: 20px;
             text-align: center;
             padding: 15px;
+            transition: transform 0.3s ease;
         }
 
         .product img {
             width: 100%;
-            border-radius: 8px;
             height: 200px;
             object-fit: cover;
+            border-radius: 8px;
         }
 
         .product h2 {
@@ -81,6 +80,10 @@
             font-size: 18px;
             color: #e74c3c;
             font-weight: bold;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -121,8 +124,8 @@
 <body>
 
     <header>
-        <h1>Birthday Cakes Shop</h1>
-        <p>Find the Perfect Cake for a Special Celebration</p>
+        <h1>Cake Shop</h1>
+        <p>Delicious Cakes for Every Occasion</p>
     </header>
 
     <nav>
@@ -132,92 +135,200 @@
         <a href="#">Contact</a>
     </nav>
 
-    <!-- Birthday Cakes Section -->
     <div class="container">
+        <!-- Cake 1 -->
         <div class="product">
-            <img src="cake1.jpg" alt="Chocolate Cake">
-            <h2>Chocolate Birthday Cake</h2>
-            <p>A rich and creamy chocolate cake with layers of delight.</p>
+            <img src="cake1.jpg" alt="Classic Birthday Cake">
+            <h2>Classic Birthday Cake</h2>
+            <p>A simple and delicious cake for birthdays.</p>
             <p class="price">$25.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 2 -->
         <div class="product">
-            <img src="cake2.jpg" alt="Vanilla Cake">
-            <h2>Vanilla Birthday Cake</h2>
-            <p>A soft and fluffy vanilla cake with a touch of sweetness.</p>
-            <p class="price">$22.99</p>
+            <img src="cake2.jpg" alt="Elegant Wedding Cake">
+            <h2>Elegant Wedding Cake</h2>
+            <p>A tiered wedding cake decorated with flowers.</p>
+            <p class="price">$99.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 3 -->
         <div class="product">
-            <img src="cake3.jpg" alt="Red Velvet Cake">
-            <h2>Red Velvet Birthday Cake</h2>
-            <p>A beautiful red velvet cake with cream cheese frosting.</p>
-            <p class="price">$30.99</p>
+            <img src="cake3.jpg" alt="Anniversary Cake">
+            <h2>Anniversary Cake</h2>
+            <p>A romantic cake to celebrate your love.</p>
+            <p class="price">$40.00</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 4 -->
         <div class="product">
-            <img src="cake4.jpg" alt="Fruit Cake">
-            <h2>Fruit Cake</h2>
-            <p>A light and fresh fruit cake packed with natural flavors.</p>
+            <img src="cake4.jpg" alt="Baby Shower Cake">
+            <h2>Baby Shower Cake</h2>
+            <p>A cute cake for baby showers.</p>
+            <p class="price">$30.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 5 -->
+        <div class="product">
+            <img src="cake5.jpg" alt="Graduation Cake">
+            <h2>Graduation Cake</h2>
+            <p>A celebratory cake for graduation.</p>
+            <p class="price">$35.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 6 -->
+        <div class="product">
+            <img src="cake6.jpg" alt="Chocolate Cake">
+            <h2>Chocolate Cake</h2>
+            <p>A rich and moist chocolate cake.</p>
             <p class="price">$28.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 7 -->
         <div class="product">
-            <img src="cake5.jpg" alt="Strawberry Shortcake">
-            <h2>Strawberry Shortcake</h2>
-            <p>A delightful strawberry cake topped with whipped cream.</p>
-            <p class="price">$26.99</p>
+            <img src="cake7.jpg" alt="Fruit Cake">
+            <h2>Fruit Cake</h2>
+            <p>Fresh fruit cake with seasonal fruits.</p>
+            <p class="price">$27.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 8 -->
         <div class="product">
-            <img src="cake6.jpg" alt="Chocolate Mousse Cake">
-            <h2>Chocolate Mousse Cake</h2>
-            <p>A decadent chocolate mousse cake with a silky texture.</p>
-            <p class="price">$32.99</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product">
-            <img src="cake7.jpg" alt="Carrot Cake">
-            <h2>Carrot Birthday Cake</h2>
-            <p>A moist carrot cake with a cream cheese frosting.</p>
-            <p class="price">$24.99</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product">
-            <img src="cake8.jpg" alt="Lemon Cake">
-            <h2>Lemon Birthday Cake</h2>
-            <p>A zesty lemon cake with a refreshing citrus flavor.</p>
+            <img src="cake8.jpg" alt="Carrot Cake">
+            <h2>Carrot Cake</h2>
+            <p>A moist carrot cake with cream cheese frosting.</p>
             <p class="price">$23.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 9 -->
         <div class="product">
-            <img src="cake9.jpg" alt="Cheesecake">
-            <h2>New York Cheesecake</h2>
-            <p>A creamy and smooth cheesecake with a graham cracker crust.</p>
-            <p class="price">$34.99</p>
+            <img src="cake9.jpg" alt="Mini Cupcakes">
+            <h2>Mini Cupcakes</h2>
+            <p>Delicious mini cupcakes for any event.</p>
+            <p class="price">$15.99</p>
             <button>Add to Cart</button>
         </div>
 
+        <!-- Cake 10 -->
         <div class="product">
-            <img src="cake10.jpg" alt="Buttercream Cake">
-            <h2>Buttercream Birthday Cake</h2>
-            <p>A classic buttercream cake with a soft, sweet finish.</p>
-            <p class="price">$27.99</p>
+            <img src="cake10.jpg" alt="Red Velvet Cake">
+            <h2>Red Velvet Cake</h2>
+            <p>A rich red velvet cake with cream cheese frosting.</p>
+            <p class="price">$32.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 11 -->
+        <div class="product">
+            <img src="cake11.jpg" alt="Lemon Cake">
+            <h2>Lemon Cake</h2>
+            <p>A tangy and refreshing lemon cake.</p>
+            <p class="price">$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 12 -->
+        <div class="product">
+            <img src="cake12.jpg" alt="Chocolate Mousse Cake">
+            <h2>Chocolate Mousse Cake</h2>
+            <p>A rich chocolate mousse cake.</p>
+            <p class="price">$35.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 13 -->
+        <div class="product">
+            <img src="cake13.jpg" alt="Wedding Anniversary Cake">
+            <h2>Wedding Anniversary Cake</h2>
+            <p>A special cake for celebrating anniversaries.</p>
+            <p class="price">$45.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 14 -->
+        <div class="product">
+            <img src="cake14.jpg" alt="Holiday Cake">
+            <h2>Holiday Cake</h2>
+            <p>A festive cake for holidays like Christmas.</p>
+            <p class="price">$50.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 15 -->
+        <div class="product">
+            <img src="cake15.jpg" alt="Gender Reveal Cake">
+            <h2>Gender Reveal Cake</h2>
+            <p>A colorful cake for gender reveal parties.</p>
+            <p class="price">$36.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 16 -->
+        <div class="product">
+            <img src="cake16.jpg" alt="Cheesecake">
+            <h2>New York Cheesecake</h2>
+            <p>A rich New York-style cheesecake with berries.</p>
+            <p class="price">$42.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 17 -->
+        <div class="product">
+            <img src="cake17.jpg" alt="Buttercream Cake">
+            <h2>Buttercream Cake</h2>
+            <p>A soft and delicious buttercream cake.</p>
+            <p class="price">$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 18 -->
+        <div class="product">
+            <img src="cake18.jpg" alt="Vegan Cake">
+            <h2>Vegan Cake</h2>
+            <p>A cake for those who prefer vegan options.</p>
+            <p class="price">$26.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 19 -->
+        <div class="product">
+            <img src="cake19.jpg" alt="Chocolate Fudge Cake">
+            <h2>Chocolate Fudge Cake</h2>
+            <p>A dense chocolate fudge cake.</p>
+            <p class="price">$38.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 20 -->
+        <div class="product">
+            <img src="cake20.jpg" alt="Mango Cake">
+            <h2>Mango Cake</h2>
+            <p>A tropical mango cake perfect for summer.</p>
+            <p class="price">$28.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Cake 21 -->
+        <div class="product">
+            <img src="cake21.jpg" alt="Tiramisu Cake">
+            <h2>Tiramisu Cake</h2>
+            <p>A classic Italian tiramisu cake.</p>
+            <p class="price">$37.00</p>
             <button>Add to Cart</button>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Birthday Cakes Shop | All Rights Reserved</p>
-        <p><a href="mailto:info@birthdaycakes.com">Contact Us</a></p>
+        <p>&copy; 2025 Cake Shop | All Rights Reserved</p>
+        <p><a href="mailto:info@cakeshop.com">Contact Us</a></p>
     </footer>
 
     <div class="contact-form">
